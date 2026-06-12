@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'lois Tech | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles to handle sticky offset smooth scroll */
+        html {
+            scroll-padding-top: 70px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-[#8B0000] text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="bg-white px-4 py-1.5 rounded-md flex items-center space-x-3 shadow-inner">
+                <div class="w-9 h-9 bg-[#8B0000] text-white rounded-full flex items-center justify-center font-bold text-sm tracking-wider border-2 border-red-200 shadow">
+                    DT
+                </div>
+                <span class="text-red-600 font-extrabold text-lg tracking-tight">D'lois Tech</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-red-200 transition-colors">Home</a>
+                <a href="#about" class="hover:text-red-200 transition-colors">About</a>
+                <a href="#resume" class="hover:text-red-200 transition-colors">Resume</a>
+                <a href="#programs" class="hover:text-red-200 transition-colors">Programs</a>
+                <a href="#contact" class="hover:text-red-200 transition-colors">Contact</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#700000] px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block py-2 hover:bg-[#8B0000] rounded px-2">Home</a>
+            <a href="#about" class="block py-2 hover:bg-[#8B0000] rounded px-2">About</a>
+            <a href="#resume" class="block py-2 hover:bg-[#8B0000] rounded px-2">Resume</a>
+            <a href="#programs" class="block py-2 hover:bg-[#8B0000] rounded px-2">Programs</a>
+            <a href="#contact" class="block py-2 hover:bg-[#8B0000] rounded px-2">Contact</a>
+        </div>
+    </header>
+
+    <section id="home" class="w-full min-h-[40vh] bg-gradient-to-br from-red-50 to-amber-50 py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl md:text-5xl font-black text-gray-900 tracking-tight text-center mb-8 md:mb-12">
+                EZENWUKWA CHIDIOGO LOIS
+            </h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center">
+                    <div class="relative max-w-md w-full aspect-video md:aspect-square overflow-hidden rounded-2xl shadow-xl border-4 border-white">
+                        <img src="../assets/laptop.jpg" 
+                             alt="Woman with laptop in office" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-center md:text-left">
+                    <span class="inline-block bg-red-100 text-red-800 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                        Aspiring Full-Stack Developer
+                    </span>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+                        A Dedicated Website Developer in Training
+                    </h2>
+                    <p class="text-lg md:text-xl font-medium text-gray-600 leading-relaxed">
+                        Building a robust structural foundation in modern web technologies. Transforming logical wireframes into crisp, high-performing user interfaces.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#contact" class="inline-block bg-[#8B0000] text-white font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition duration-300 transform hover:-translate-y-0.5">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Me</h2>
+            <div class="h-1 w-16 bg-[#8B0000] mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div class="flex justify-center">
+                <img src="../assets/IMG_2867.jpg" 
+                     alt="Ezenwukwa Chidiogo Lois" 
+                     class="rounded-3xl shadow-lg object-cover max-w-xs md:max-w-sm border-8 border-white">
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-bold text-[#8B0000] mb-2"><i class="fa-solid fa-graduation-cap mr-2"></i>My Training Journey</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        My journey into full stack development began with a strong curiosity about how platforms handle scale and accessibility. Over the course of my intensive training program, I have transitioned from writing elementary text blocks to building modular components and responsive systems.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-green-700 mb-2"><i class="fa-solid fa-chart-line mr-2"></i>Progress</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I have successfully structured layouts using structural HTML, deployed tailored styling patterns via Vanilla CSS and Tailwind CSS, and adapted workflow optimizations through Git/GitHub version management protocols. Every module culminated in an end-to-end sandbox project execution.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-2"></i>Challenges Overcome</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Navigating semantic structures, complex flex/grid configurations, and maintaining atomic code modularity posed deep initial hurdles. I conquered these layout and tracking challenges through system debugging patterns, leveraging community version control paradigms, and building relentless test loops.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-gray-200">
+                    <h4 class="text-sm font-bold uppercase text-gray-500 tracking-wider mb-2">Currently Learning:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full flex items-center">
+                            <i class="fa-brands fa-js mr-1.5 text-yellow-600"></i> JavaScript
+                        </span>
+                        <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full flex items-center">
+                            <i class="fa-solid fa-bolt mr-1.5 text-purple-600"></i> Vibe Engineering
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-16 bg-gray-100 px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900">Curriculum Vitae</h2>
+                <p class="text-sm text-gray-500 mt-1">ATS-Compliant Digital Format • <a href="#contact" class="text-[#8B0000] underline font-medium">Download PDF via Contact</a></p>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 shadow-md border border-gray-200 text-gray-900 rounded-lg">
+                <div class="text-center border-b pb-6">
+                    <h1 class="text-2xl font-bold uppercase tracking-wide">Ezenwukwa Chidiogo Lois</h1>
+                    <p class="text-sm mt-1">
+                        +234-8107624469 | <a href="mailto:ezenwukwachidiogolois@gmail.com" class="underline">ezenwukwachidiogolois@gmail.com</a>
+                    </p>
+                    <p class="text-sm text-gray-600 mt-1">Port Harcourt, Nigeria | LinkedIn & GitHub: @ChidiogoLois</p>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-gray-800 border-b pb-1 mb-2">Professional Summary</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Detail-oriented Full-Stack Developer in Training with foundational expertise in client-side architectures, atomic utility styles, and version control configurations. Proven capacity to translate UI wireframes into responsive, standards-compliant web screens. Experienced in structural debug pipelines and collaborative development lifecycles.
+                    </p>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-gray-800 border-b pb-1 mb-2">Core Technical Proficiencies</h2>
+                    <ul class="text-sm text-gray-700 grid grid-cols-2 md:grid-cols-3 gap-y-1 gap-x-4 list-disc pl-5">
+                        <li>HTML5 / Semantics</li>
+                        <li>Vanilla CSS3 / Flexbox / Grid</li>
+                        <li>Tailwind CSS Utility Engine</li>
+                        <li>Git / GitHub Version Control</li>
+                        <li>Vibe Coding / Declarative Build Tools</li>
+                        <li>JavaScript (Under Active Study)</li>
+                    </ul>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-gray-800 border-b pb-1 mb-2">Technical Projects & Training Experience</h2>
+                    
+                    <div class="mb-4">
+                        <div class="flex justify-between font-bold text-sm text-gray-800">
+                            <span>Full-Stack Development Associate Trainee</span>
+                            <span>2025 – Present</span>
+                        </div>
+                        <p class="text-xs italic text-gray-600">Independent Immersive Engineering Curriculum</p>
+                        <ul class="list-disc pl-5 text-sm text-gray-700 mt-1.5 space-y-1">
+                            <li><strong>UI/UX Production Architectures:</strong> Drafted component layouts utilizing semantically rich HTML structures alongside Tailwind CSS utilities, shortening iterative load times.</li>
+                            <li><strong>Git Pipeline Implementations:</strong> Organized production repositories by leveraging Git version strategies, isolation branching, merge request pipelines, and clean change documentation.</li>
+                            <li><strong>Vibe Coding Deployment Systems:</strong> Formulated prototype instances and optimized operational workflows using rapid logic design pipelines.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-gray-800 border-b pb-1 mb-2">Education & Certifications</h2>
+                    <div class="flex justify-between text-sm text-gray-700 font-semibold">
+                        <span>Full-Stack Engineering Training Curriculum</span>
+                        <span>In Progress</span>
+                    </div>
+                    <p class="text-xs text-gray-600">Specializations: Core Frontend, Component Optimization, Continuous Delivery Tracks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Completed Programs & Projects</h2>
+            <p class="text-gray-500 mt-2">A breakdown of built instances, from architectural concept to delivery</p>
+            <div class="h-1 w-16 bg-[#8B0000] mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white border border-red-500 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-orange-600 text-3xl mb-4"><i class="fa-brands fa-html5"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">HTML5 Foundation</h3>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Objective:</strong> Designed to eliminate layout fragmentation and deliver high-accessibility semantic web foundations for complex documents.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed"><strong>Execution:</strong> Designed clean node hierarchies, coded strict semantic mockups, and verified document compliance against universal accessibility metrics.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100 text-xs font-semibold text-gray-400">Completed & Shipped</div>
+            </div>
+
+            <div class="bg-white border border-red-500 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-blue-600 text-3xl mb-4"><i class="fa-brands fa-css3-alt"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Vanilla CSS3</h3>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Objective:</strong> Formulated to establish visual symmetry, modular style hierarchies, and fluid responsive behaviors without external overhead.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed"><strong>Execution:</strong> Sketched cross-screen viewports, built custom flexbox layouts, and shipped clean cascading architecture rules.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100 text-xs font-semibold text-gray-400">Completed & Shipped</div>
+            </div>
+
+            <div class="bg-white border border-red-500 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-sky-500 text-3xl mb-4"><i 
+                        class="fa-solid fa-wind"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Tailwind CSS</h3>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Objective:</strong> Implemented to accelerate rapid styling workflows and ensure atomic uniformity across modern UI screens.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed"><strong>Execution:</strong> Formulated wireframe layouts inside configuration constraints, styled fluid element grids, and minimized inline overhead assets.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100 text-xs font-semibold text-gray-400">Completed & Shipped</div>
+            </div>
+
+            <div class="bg-white border border-red-500 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-gray-900 text-3xl mb-4"><i class="fa-brands fa-github"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">GitHub Architecture</h3>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Objective:</strong> Implemented to secure code integrity, manage feature tracking, and enable decentralized, automated deployment pipelines.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed"><strong>Execution:</strong> Configured structural cloud hosting targets, automated live page deployments, and streamlined master branches.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100 text-xs font-semibold text-gray-400">Completed & Shipped</div>
+            </div>
+
+            <div class="bg-white border border-red-500 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-red-600 text-3xl mb-4"><i class="fa-solid fa-code-branch"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Version Control (Git)</h3>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Objective:</strong> Designed to prevent code conflicts, handle structural state rollbacks, and manage non-linear features safely.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed"><strong>Execution:</strong> Initialized local repositories, resolved merge conflicts systematically, and committed clean change paths.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100 text-xs font-semibold text-gray-400">Completed & Shipped</div>
+            </div>
+
+            <div class="bg-white border border-red-500 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-purple-600 text-3xl mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Vibe Coding</h3>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Objective:</strong> Deployed to rapidly generate working system mockups and accelerate software generation using intuitive, high-level structural patterns.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed"><strong>Execution:</strong> Framed iterative logic prompts, integrated multi-module components, and reviewed final builds for functional compliance.</p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-gray-100 text-xs font-semibold text-gray-400">Completed & Shipped</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200 w-full">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Get In Touch</h2>
+                <div class="h-1 w-16 bg-[#8B0000] mx-auto mt-3"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-gray-800">Contact Information</h3>
+                    <p class="text-gray-600">
+                        Whether you are looking to collaborate on a responsive interface build, review technical project metrics, or discuss full stack engineering opportunities, feel free to reach out.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-[#8B0000]">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">+234-8107624469</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-[#8B0000]">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <a href="mailto:ezenwukwachidiogolois@gmail.com" class="text-gray-700 font-medium hover:underline">ezenwukwachidiogolois@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Connect on Socials</h4>
+                        <div class="flex space-x-4 text-2xl">
+                            <a href="https://linkedin.com" target="_blank" class="text-[#0077B5] hover:opacity-80 transition-opacity" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com" target="_blank" class="text-[#24292e] hover:opacity-80 transition-opacity" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://x.com" target="_blank" class="text-[#000000] hover:opacity-80 transition-opacity" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://facebook.com" target="_blank" class="text-[#1877F2] hover:opacity-80 transition-opacity" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://wa.me/2348107624469" target="_blank" class="text-[#25D366] hover:opacity-80 transition-opacity" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">Send a Message</h3>
+                    <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Message simulation submitted successfully!');">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Your Name</label>
+                            <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[#8B0000]" placeholder=" first middle last">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Email Address</label>
+                            <input type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[#8B0000]" placeholder="email address">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-600 uppercase mb-1">Your Comment</label>
+                            <textarea rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-[#8B0000]" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#8B0000] text-white font-bold py-2 px-4 rounded-md hover:bg-red-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-auto sticky bottom-0 z-50 bg-gray-900 text-gray-400 border-t border-gray-800 text-xs py-3 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+            <div>
+                <span class="font-bold text-white">D'lois Tech</span> &copy; 2026. All Rights Reserved.
+            </div>
+            <div class="flex space-x-4">
+                <a href="#home" class="hover:text-white transition-colors">Back to Top</a>
+                <span>|</span>
+                <span class="text-gray-500">Developer Portfolio Platform</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
